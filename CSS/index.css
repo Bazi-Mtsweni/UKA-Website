@@ -42,7 +42,10 @@ header .info-strip .info-group {
 header .info-strip .info-group .fa-solid {
   margin-right: 1rem;
   margin-left: 5rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+header .info-strip .info-group .info p:nth-child(2){
+  font-family: var(--altenate-font);
 }
 header nav {
   background-color: var(--secondary-color);
