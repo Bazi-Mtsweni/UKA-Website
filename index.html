@@ -22,6 +22,7 @@
       integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0="
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
@@ -29,6 +30,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Local Files -->
     <link rel="stylesheet" href="./CSS/styles.css" />
@@ -36,18 +38,16 @@
     <script src="./JS/script.js" defer></script>
   </head>
 
-
   <body>
     <div class="mobile-header flex hidden">
-        <div class="image-container">
-          <img src="./Images/logo-white.svg" alt="UKA-detailers-logo-white" />
-        </div>
-        <div class="mobile-menu">
-          <i class="fa-solid fa-bars"></i>
-        </div>
+      <div class="image-container">
+        <img src="./Images/logo-white.svg" alt="UKA-detailers-logo-white" />
       </div>
+      <div class="mobile-menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
     <header>
-      
       <div class="logo-container">
         <div class="img-container">
           <img src="./Images/logo.svg" alt="UKA-detailers-logo" />
@@ -75,19 +75,19 @@
       <nav id="navigation">
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#about-section">About Us</a></li>
+          <li><a href="#services-section">Services</a></li>
+          <li><a href="#pricing-section">Pricing</a></li>
+          <li><a href="#contact-section">Contact Us</a></li>
         </ul>
-        <button><a href="#">Book Now</a></button>
+        <button><a href="#contact-section">Book Now</a></button>
       </nav>
     </header>
     <main>
       <!-- Hero Section -->
 
-      <section class="hero">
-        <div class="hero-form">
+      <section class="hero" data-aos="fade-up" data-aos-duration="1000">
+        <div class="hero-form" id="hero-form" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
           <h2>Let us contact you!</h2>
           <p>Please send us your request and we will contact you soon.</p>
           <form action="">
@@ -119,7 +119,7 @@
             <input type="submit" value="Request Call" />
           </form>
         </div>
-        <div class="hero-info">
+        <div class="hero-info" data-aos="fade-left" data-aos-duration="1000">
           <h3>Premium Detailing Service</h3>
           <h1>Keep your car newer</h1>
           <p>
@@ -127,7 +127,7 @@
             dui, vel blandit massa. Ut vestibu suscipi cursus. Cras quis porta
             nulla, ut placerat risus. Aliquam nec magna eget velit luctus dictum
           </p>
-          <button><a href="#">Get Started</a></button>
+          <button><a href="#about-section">Get Started</a></button>
         </div>
       </section>
 
@@ -135,8 +135,8 @@
 
       <!-- About Us Section -->
 
-      <section class="about-us flex">
-        <div class="about-info">
+      <section class="about-us flex" id="about-section">
+        <div class="about-info" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
           <h2>About our business</h2>
           <div class="hr"></div>
           <p>
@@ -152,7 +152,7 @@
           </p>
           <a href="#">Learn more</a>
         </div>
-        <div class="about-video">
+        <div class="about-video" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
           <video autoplay>
             <source
               src="./Images/pexels-pavel-danilyuk-6158065.mp4"
@@ -166,8 +166,8 @@
 
       <!-- Services Section -->
 
-      <section class="services-section">
-        <div class="title">
+      <section class="services-section" id="services-section">
+        <div class="title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
           <h2>What we do for you</h2>
           <div class="hr"></div>
           <p>
@@ -175,14 +175,15 @@
             dui, vel blandit massa. Ut vestibu suscipi cursus. Cras quis porta
             nulla, ut placerat risus. Aliquam nec magna eget velit luctus dictum
           </p>
+        </div>
           <div class="services flex">
-            <div class="img-container">
+            <div class="img-container" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
               <img
                 src="./Images/pexels-orhun-rüzgar-öz-6026083.jpg"
                 alt="car-buffing"
               />
             </div>
-            <div class="services-info">
+            <div class="services-info" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1500">
               <div class="services-list flex">
                 <ul>
                   <li><i class="fa-regular fa-circle-check"></i> Service 1</li>
@@ -198,10 +199,10 @@
                 </ul>
               </div>
 
-              <button><a href="#">Get Free Quote</a></button>
+              <button><a href="#contact-section">Get Free Quote</a></button>
             </div>
           </div>
-        </div>
+        
       </section>
 
       <!-- Services Section -->
@@ -209,7 +210,7 @@
       <!-- Quality Section -->
 
       <section class="quality">
-        <div class="quality-info">
+        <div class="quality-info" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
           <h2>Join our endless list of happy clients</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
@@ -219,7 +220,7 @@
           </p>
           <button><a href="#">Book Now!</a></button>
         </div>
-        <div class="img-container">
+        <div class="img-container" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
           <img
             src="./Images/pexels-kris-lucas-3264504.jpg"
             alt="clean-mercedes"
@@ -231,13 +232,13 @@
 
       <!-- Pricing -->
 
-      <section class="pricing">
-        <div class="title">
+      <section class="pricing" id="pricing-section">
+        <div class="title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
           <h2>Our pricing plans</h2>
           <div class="hr"></div>
         </div>
         <div class="pricing-cards flex">
-          <div class="pricing-card">
+          <div class="pricing-card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
             <p class="category">Best for beginners</p>
             <p class="package-name">Package One</p>
             <p class="price">R199.99</p>
@@ -249,9 +250,9 @@
                 <i class="fa-regular fa-circle-check"></i>Service 2
               </p>
             </div>
-            <button><a href="#">Request Call</a></button>
+            <button><a href="#hero-form">Request Call</a></button>
           </div>
-          <div class="pricing-card center">
+          <div class="pricing-card center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1500">
             <p class="category">Recommended</p>
             <p class="package-name">Package Two</p>
             <p class="price">R299.99</p>
@@ -266,9 +267,9 @@
                 <i class="fa-regular fa-circle-check"></i>Service 3
               </p>
             </div>
-            <button><a href="#">Request Call</a></button>
+            <button><a href="#hero-form">Request Call</a></button>
           </div>
-          <div class="pricing-card">
+          <div class="pricing-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000">
             <p class="category">Premium Offer</p>
             <p class="package-name">Package Three</p>
             <p class="price">R399.99</p>
@@ -280,7 +281,7 @@
                 <i class="fa-regular fa-circle-check"></i>Service 2
               </p>
             </div>
-            <button><a href="#">Request Call</a></button>
+            <button><a href="#hero-form">Request Call</a></button>
           </div>
         </div>
       </section>
@@ -290,7 +291,7 @@
       <!-- Operating Hours -->
 
       <section class="operating-hours flex">
-        <div class="title">
+        <div class="title" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
           <h2>Our Operating Hours</h2>
           <div class="hr"></div>
           <p>
@@ -302,14 +303,14 @@
           </p>
         </div>
         <div class="info flex">
-          <div class="days">
+          <div class="days" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
             <p>Monday - Friday</p>
             <p>Saturday</p>
             <p>Sunday</p>
             <p>Public Holidays</p>
           </div>
-          <div class="vr"></div>
-          <div class="time">
+          <div class="vr" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1500"></div>
+          <div class="time" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000">
             <p>08h00 - 16h00</p>
             <p>Closed</p>
             <p>08h00 - 14h00</p>
@@ -322,15 +323,15 @@
 
       <!-- Contact Us -->
 
-      <section class="contact-us flex">
-        <div class="img-container">
+      <section class="contact-us flex" id="contact-section">
+        <div class="img-container" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
           <img
             src="./Images/beautiful-car-washing-service (1).jpg"
             alt="car-being-washed"
           />
         </div>
         <div class="form">
-          <div class="title">
+          <div class="title" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
             <h2>Keep in touch with us</h2>
             <div class="hr"></div>
             <p>
@@ -339,7 +340,7 @@
               unde obcaecati in.
             </p>
           </div>
-          <form action="">
+          <form action="" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1500">
             <input
               type="text"
               name="name"
@@ -378,54 +379,54 @@
     <footer>
       <div class="top flex">
         <div class="contacts">
-          <h2>Contact Us</h2>
-          <div class="address flex">
+          <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">Contact Us</h2>
+          <div class="address flex" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
             <i class="fa-solid fa-location-dot"></i>
             <p>Ext 3, Kwa-Thema</p>
           </div>
-          <div class="number flex">
+          <div class="number flex" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200">
             <i class="fa-solid fa-phone-volume"></i>
             <p>+27 67 053 7383</p>
           </div>
-          <div class="email flex">
+          <div class="email flex" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1400">
             <i class="fa-solid fa-envelope"></i>
             <p>admin@ukadetailers.co.za</p>
           </div>
         </div>
         <div class="navigation">
-          <h2>Navigation</h2>
+          <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">Navigation</h2>
           <ul>
-            <li><a href="#">> Home</a></li>
+            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000"><a href="#">> Home</a></li>
           </ul>
           <ul>
-            <li><a href="#">> About Us</a></li>
+            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><a href="#">> About Us</a></li>
           </ul>
           <ul>
-            <li><a href="#">> Services</a></li>
+            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1400"><a href="#">> Services</a></li>
           </ul>
           <ul>
-            <li><a href="#">> Pricing</a></li>
+            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1600"><a href="#">> Pricing</a></li>
           </ul>
           <ul>
-            <li><a href="#">> Contact</a></li>
+            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1800"><a href="#">> Contact</a></li>
           </ul>
         </div>
         <div class="legal">
-          <h2>Legal</h2>
+          <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">Legal</h2>
           <ul>
-            <li><a href="#">> Terms of Use</a></li>
+            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000"><a href="#">> Terms of Use</a></li>
           </ul>
           <ul>
-            <li><a href="#">> Privacy Policy</a></li>
+            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><a href="#">> Privacy Policy</a></li>
           </ul>
           <ul>
-            <li><a href="#">> Cookies</a></li>
+            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1400"><a href="#">> Cookies</a></li>
           </ul>
           <ul>
-            <li><a href="#">> Help</a></li>
+            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1600"><a href="#">> Help</a></li>
           </ul>
           <ul>
-            <li><a href="#">> FAQ</a></li>
+            <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1800"><a href="#">> FAQ</a></li>
           </ul>
         </div>
         <div class="img-container logo">
@@ -433,8 +434,8 @@
         </div>
       </div>
       <div class="bottom flex">
-        <p>UKA Premium Detailers &copy; 2023. Copyrights Reserved.</p>
-        <p>Designed & Developed by Explosive Artworks & Designs&reg;</p>
+        <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000" data-aos-anchor-placement="top-bottom">UKA Premium Detailers &copy; 2023. Copyrights Reserved.</p>
+        <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000" data-aos-anchor-placement="top-bottom">Designed & Developed by Explosive Artworks & Designs&reg;</p>
       </div>
     </footer>
 
