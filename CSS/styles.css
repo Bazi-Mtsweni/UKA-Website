@@ -1,0 +1,109 @@
+/* Developed By Explosive Artworks & Designs */
+/* UKA Premium Detailers © 2023 */
+
+/* Fonts */
+
+@font-face {
+  font-family: "Agrandir";
+  src: url("../Fonts/Agrandir-Regular.otf");
+}
+@font-face {
+  font-family: "Agrandir-Bold";
+  src: url("../Fonts/Agrandir-TextBold.otf");
+}
+@font-face {
+  font-family: "Racing-Sans";
+  src: url("../Fonts/RacingSansOne-Regular.ttf");
+}
+
+/* Fonts */
+
+/* Basic Styles */
+:root {
+  --primary-color: #f50909;
+  --secondary-color: #37474f;
+  --white: #fff;
+  --hover-color: #cc0b0b;
+
+  --main-font: "Agrandir-Bold", sans-serif;
+  --nav-font: "Racing-Sans", sans-serif;
+  --altenate-font: "Agrandir", sans-serif;
+
+  --h1-desktop: 3rem;
+  --h2-desktop: 2rem;
+  --h3-desktop: 1.5rem;
+  --p-desktop: .8rem;
+
+  --h1-tablet: 5rem;
+  --h2-tablet: 3rem;
+  --h3-tablet: 2.5rem;
+  --p-tablet: 1.5rem;
+
+  --h1-mobile: 5rem;
+  --h2-mobile: 3rem;
+  --h3-mobile: 2.5rem;
+  --p-mobile: 1.5rem;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+body {
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  font-family: var(--main-font);
+  color: var(--secondary-color);
+}
+.img-container {
+  position: relative;
+  overflow: hidden;
+  width: 30%;
+}
+.img-container img {
+  width: 100%;
+  object-fit: cover;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hidden{
+  display: none;
+  pointer-events: none;
+}
+.show{
+  display: block;
+  pointer-events: all;
+}
+button {
+  background-color: var(--primary-color);
+  border: none;
+  outline: none;
+  border-radius: 35px;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+button a {
+  color: var(--white);
+  text-transform: uppercase;
+  font-family: var(--main-font);
+}
+button:hover {
+  background-color: var(--hover-color);
+}
+span.hr {
+  height: 15px;
+  background-color: var(--primary-color);
+  width: 40%;
+  margin: 2rem 0rem;
+}
+/* Basic Styles */
