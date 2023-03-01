@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 Error - UKA Premium Detailers</title>
+
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <link rel="stylesheet" href="../CSS/404.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <main class="flex">
+      <div class="img-container">
+        <img src="../Images/404.svg" alt="404-image" />
+      </div>
+      <div class="info">
+        <h1>Page Not Found</h1>
+        <p>
+          The page you requested is either unavailable at the moment, broken or
+          moved. Please return to the home page.
+        </p>
+        <button><a href="../index.html">Go back to the Home Page</a></button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="top flex">
+          <div class="contacts">
+            <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">Contact Us</h2>
+            <div class="address flex" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Ext 3, Kwa-Thema</p>
+            </div>
+            <div class="number flex" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200">
+              <i class="fa-solid fa-phone-volume"></i>
+              <p>+27 67 053 7383</p>
+            </div>
+            <div class="email flex" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1400">
+              <i class="fa-solid fa-envelope"></i>
+              <p>admin@ukadetailers.co.za</p>
+            </div>
+          </div>
+          <div class="navigation">
+            <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">Navigation</h2>
+            <ul>
+              <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000"><a href="../index.html">> Home</a></li>
+            </ul>
+            <ul>
+              <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><a href="../index.html#about-section">> About Us</a></li>
+            </ul>
+            <ul>
+              <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1400"><a href="../index.html#services-section">> Services</a></li>
+            </ul>
+            <ul>
+              <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1600"><a href="../index.html#pricing-section">> Pricing</a></li>
+            </ul>
+            <ul>
+              <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1800"><a href="../index.html#contact-section">> Contact</a></li>
+            </ul>
+          </div>
+          <div class="legal">
+            <h2 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">Legal</h2>
+            <ul>
+              <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000"><a href="#">> Terms of Use</a></li>
+            </ul>
+            <ul>
+              <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"><a href="#">> Privacy Policy</a></li>
+            </ul>
+            <ul>
+              <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1400"><a href="#">> Cookies</a></li>
+            </ul>
+            <ul>
+              <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1600"><a href="#">> Help</a></li>
+            </ul>
+            <ul>
+              <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1800"><a href="#">> FAQ</a></li>
+            </ul>
+          </div>
+          <div class="img-container logo">
+            <img src="../Images/logo-white.svg" alt="UKA-detailers-logo-white" />
+          </div>
+        </div>
+        <div class="bottom flex">
+          <p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="2000" data-aos-anchor-placement="top-bottom">UKA Premium Detailers &copy; 2023. Copyrights Reserved.</p>
+          <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2000" data-aos-anchor-placement="top-bottom">Designed & Developed by Explosive Artworks & Designs&reg;</p>
+        </div>
+      </footer>
+  
+      <!-- Footer -->
+
+      <script type="text/javascript"> AOS.init(); </script>
+  </body>
+</html>

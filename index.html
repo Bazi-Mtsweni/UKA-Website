@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow">
     <meta name="keywords" content="Car Detailing, Valet, Detailing, Detailing Services in Springs">
     <meta name="description" content="We offer only premium detailing and valet services at the comfort of your desired location. Call UKA Premium detailers today to book your appointment">
 
@@ -17,6 +18,8 @@
     <meta property="og:description" content="We offer only premium detailing and valet services at the comfort of your desired location.">
     <meta property="og:site_name" content="UKA Premium Detailers">
     <meta name="twitter:image:alt" content="UKA-detailers-wallpaper">
+
+    <link rel="canonical" href="https://bazi-mtsweni.github.io/UKA-Website/">
 
     <!-- Favicon -->
     <link href="./Images/favicon1.ico" rel="icon">
@@ -108,18 +111,21 @@
               name="name"
               id="name"
               placeholder="Your Name & Surname"
+              required
             />
             <input
               type="tel"
               name="tel"
               id="tel"
               placeholder="Your Contact Number"
+              required
             />
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Your Email Address"
+              required
             />
             <textarea
               name="message"
@@ -127,8 +133,9 @@
               cols="30"
               rows="10"
               placeholder="What do you need assistance with?"
+              required
             ></textarea>
-            <input type="submit" value="Request Call" />
+            <input class="submit-btn1" type="submit" value="Request Call" />
           </form>
         </div>
         <div class="hero-info" data-aos="fade-left" data-aos-duration="1000">
@@ -162,10 +169,10 @@
             dui, vel blandit massa. Ut vestibu suscipi cursus. Cras quis porta
             nulla, ut placerat risus. Aliquam nec magna eget velit luctus dictum
           </p>
-          <a href="#">Learn more</a>
+          <a href="./Views/noPage.html">Learn more</a>
         </div>
         <div class="about-video" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
-          <video autoplay>
+          <video autoplay loop>
             <source
               src="./Images/pexels-pavel-danilyuk-6158065.mp4"
               type="video/mp4"
@@ -378,7 +385,7 @@
               rows="10"
               placeholder="Type message here..."
             ></textarea>
-            <input type="submit" value="Send Message" />
+            <input class="submit-btn2" type="submit" value="Send Message" />
           </form>
         </div>
       </section>
@@ -452,5 +459,19 @@
     </footer>
 
     <!-- Footer -->
+
+    <!-- Modals -->
+
+    <div class="modal-success ">
+      <i class="fa-solid fa-circle-xmark"></i>
+      <i class="fa-solid fa-thumbs-up"></i>
+      <h2>Message Sent Successfully</h2>
+      <p>Thank you <span class="client-name">Bazi</span>, your message has been received. We will respond to your message shortly or call you back.</p>
+      <button class="modal-btn">Close</button>
+    </div>
+
+    <!-- Modals -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
   </body>
 </html>
